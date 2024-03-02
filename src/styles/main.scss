@@ -1,0 +1,66 @@
+
+@use 'hero';
+@use 'shows';
+@use 'variaveis';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: variaveis.$corDeFundo;
+    font-family: Avenir, sans-serif;
+}
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: #f9f9f9;
+}
+
+
+
+@mixin title($fontSize: 28px) {
+    @include text($fontSize);
+    color: #f9f9f9;
+}
+
+
+
+.text--big {
+    @include text(18px);
+}
+
+.text {
+    @include text;
+}
+
+.text--small {
+    @include text(12px);
+}
+
+
+.link-text {
+    @include text(18px);
+    color: #f9f9f9;
+    text-decoration: underline;
+}
+
+.title--big {
+    @include text(44px);
+
+}
+
+.title {
+    @include text;
+
+}
+
+.title--small {
+    @include text(28px);
+
+}
+
+
