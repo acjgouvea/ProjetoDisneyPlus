@@ -1,10 +1,12 @@
+@use 'header';
 @use 'hero';
 @use 'shows';
-@use 'variaveis';
 @use 'plans';
 @use 'available-devices';
-@use 'footer';
 @use 'faq';
+@use 'footer';
+@use 'variaveis';
+
 
 @font-face {
     font-family: Avenir;
