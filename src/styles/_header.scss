@@ -8,7 +8,6 @@
     transition: background-color .5s ease;
     z-index: 1;
 
-
     &--is-hidden {
         background-color: transparent;
 
@@ -43,8 +42,6 @@
 
     &__links {
         display: flex;
-        font-size: 14px;
-        
 
         &__item {
             margin: 5px;
